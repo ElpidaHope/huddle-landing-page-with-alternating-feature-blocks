@@ -181,6 +181,21 @@ i{
     font-size: 0.8rem;  
 }
 
+.btn:hover, .btn-header:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+}
+
+.social i:hover{
+    color: var(--Pink);
+}
+
+ul:nth-of-type(1) li:hover, ul:nth-of-type(2) li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @media(min-width:1000px){
     header{
         background-image: url(images/bg-hero-desktop.svg);
