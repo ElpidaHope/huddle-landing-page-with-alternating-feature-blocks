@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+h1,h2{
+    font-family: Poppins;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin: 30px 0 20px;
+}
+
+p{
+    font-family: 'Open Sans';
+}
+
+body{
+    background-color: rgb(252, 249, 249);
+}
+img{
+    width: 100%;
+}
+
+.logo img{
+    width: 50%;
+}
+
+header{
+    background-image: url(images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Very-Pale-Cyan);
+    padding-bottom: 30px;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.logo{
+    align-self: center;
+}
+
+.header-content{
+    text-align: center;
+    padding: 0 30px;
+}
+
+.btn-header{
+    background-color: rgb(252, 249, 249);
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 120px;
+    align-self: center;
+    font-weight: 600;
+    border: 2px solid  rgb(252, 249, 249);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.btn{
+    background-color: var(--Pink);
+    border-radius: 30px;
+    padding: 10px 50px;
+    color: white;
+    border: 1px solid var(--Pink);
+}
+.intro .btn{
+    margin: 50px 0;    
+}
+
+.container{
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.content{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2{
+    margin: 50px 0 20px;
+}
+
+.small-content{
+    background-color: white;
+    text-align: center;
+    padding: 50px 10px;
+    margin: 0 10px;
+    border-radius: 15px;
+    transform: translateY(40%);
+}
+
+.small-content .btn{
+    margin-top: 20px;
+}
+
+footer{
+    background-color: var(--Very-Dark-Cyan);
+    padding: 180px 15px 30px;
+    color: white;
+}
+
+footer img{
+    filter: brightness(0) invert(1);
+    width: 50%;
+}
+
+.flex{
+    display: flex;
+    gap: 30px;
+}
+
+.flex img{
+    width: 20px;
+    align-self: flex-start;
+}
+
+.flex p{
+    align-self: flex-start;
+}
+
+.contact-address{
+    margin-top: 20px;  
+}
+
+ul{
+    list-style: none;
+}
+
+ul:nth-of-type(1){
+    margin-top: 50px;
+}
+
+li{
+    margin-bottom: 15px;
+}
+
+.location, .phone, .mail{
+    margin-bottom: 15px;
+}
+
+ul:nth-of-type(3){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social li{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+i{
+    color: white;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 0.8rem;  
+}
+
+@media(min-width:1000px){
+    header{
+        background-image: url(images/bg-hero-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 30px 50px;
+    }
+
+    .header-content{
+        display: flex;
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+    .intro{
+        flex: 45%;
+        align-self: flex-end;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
+    .intro h1{
+        font-size: 2.5rem;
+        padding-right: 20px;
+    }
+
+    .intro p{
+        padding-right: 80px;
+    }
+
+    .btn{
+        padding: 15px 70px;
+    }
+
+    .btn-header{
+        width: 200px;
+        padding: 10px 20px;
+    }
+
+    .header-content div:nth-of-type(2){
+        flex: 55%;
+    }
+
+    .container{
+        margin: 150px 60px;
+    }
+
+    .content{
+        padding: 40px 20px 20px 100px;
+        display: flex;
+        gap: 50px;
+        text-align: left;
+    }
+
+    .content img{
+        width: 440px;
+        height: 360px;
+    }
+    .grow-together, .users{
+        flex-direction: row-reverse;
+        padding-right: 180px;
+    }
+
+    .text-content{
+        font-size: 1.2rem;
+    }
+    
+    .flow-conversation .text-content{
+        margin-left: 80px;
+        padding-right: 70px;
+    }
+
+    .small-content{
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .small-content button{
+        font-size: 1.5rem;
+    }
+
+    footer{
+        padding-left: 50px;
+        padding-right: 200px;
+    }
+    footer > img{
+        width: 20%;
+    }
+
+    .conclusion{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 100px;
+    }
+
+    .contact-address{
+        flex: 40%;
+    }
+
+    ul{
+        flex: 20%;
+    }
+
+    ul:nth-of-type(1), .contact-address{
+        margin: 0;
+    }
+
+    ul{
+        align-self: flex-start;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyright{
+        text-align: right;
+        transform: translateX(120px);
+    }
+
+    .flex, li{
+        margin-bottom: 20px;
+    }
+}
